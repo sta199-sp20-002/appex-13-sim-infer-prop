@@ -1,0 +1,29 @@
+---
+title: "AppEx 13: Testing via Simulation for Proportions"
+author: "Your name here"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r packages, echo=TRUE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(infer)
+hand <- read_csv("data/handedness.csv")
+```
+
+## Exercises:
+
+The `handedness` dataset contains a random sample of 77 Duke students with
+respect to their handedness status (one mixed-handed student was asked to choose
+which hand they primarily used to brush their teeth). It is documented that
+approximately 11 percent of the world is left-handed (Hardyck and Petrinovich, 
+1977 *Psychological Bulletin*). You are interested in whether Duke has a higher
+proportion of left-handed students than would be expected from the world 
+average.
+
+1. Write out your null and alternative hypotheses in both words and symbols,
+being sure to define any notation used.
+2. Conduct a simulation-based test of your hypotheses in Exercise 1, using 5,000 
+simulations (set a random seed of `12345`) and report your p-value.
+3. What do you conclude, in the context of your research question?
